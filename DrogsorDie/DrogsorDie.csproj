@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\DatenDerPatien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DatenDerPatien.Designer.cs">
+      <DependentUpon>DatenDerPatien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
