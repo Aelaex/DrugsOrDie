@@ -16,6 +16,9 @@ namespace DrogsorDie.Forms.GUI
         public Patient()
         {
             InitializeComponent();
+            PatientL patien = new PatientL("", "");
+            
+            
         }
 
         private void buttonPatientenliste_Click(object sender, EventArgs e)
