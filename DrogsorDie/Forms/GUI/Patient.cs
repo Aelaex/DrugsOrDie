@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DrogsorDie.NewFolder1
+namespace DrogsorDie.Forms.GUI
 {
-    public partial class Form1 : Form
+    public partial class Patient : Form
     {
-        public Form1()
+        public Patient()
         {
             InitializeComponent();
         }
