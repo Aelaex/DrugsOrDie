@@ -353,3 +353,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+DrogsorDie/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache
