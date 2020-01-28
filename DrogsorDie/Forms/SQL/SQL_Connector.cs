@@ -7,6 +7,6 @@ namespace DrogsorDie.Forms.SQL
 {
     class SQL_Connector
     {
-        public 
+        
     }
 }
