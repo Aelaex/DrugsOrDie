@@ -33,7 +33,7 @@ namespace DrogsorDie.Forms.SQL
         }
         public static void initializeDefaultLocalConnection()
         {
-            initializeDBConnection("localhost", 3306, "default_schema", "username", "user");
+            initializeDBConnection("localhost", 3306, "default_schema", "user", "user");
         }
         public static void initializeDBConnection(string host, int port, string database, string username, string password)
         {
