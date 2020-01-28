@@ -30,9 +30,9 @@ namespace DrogsorDie.Forms.SQL
         public DateTime NaechsterBesuch { get => naechsterBesuch; set => naechsterBesuch = value; }
         public string LetzterBekannterStatus { get => letzterBekannterStatus; set => letzterBekannterStatus = value; }
         public string Hausnr { get => hausnr; set => hausnr = value; }
-        public List<Vorerkrankung> Vorerkrankungen { get => null;}
-        public List<Allergie> Allergien { get => null; }
-        public List<Patientenbesuch> Patientenbesuche { get => null; }
+      //  public List<Vorerkrankung> Vorerkrankungen { get => null;}
+      //  public List<Allergie> Allergien { get => null; }
+      //  public List<Patientenbesuch> Patientenbesuche { get => null; }
         public double Gesamtkosten { get => 0; }
         public double Patientenbesuche_gesamt { get => 0; }
 
