@@ -17,7 +17,7 @@
 mono_crash.*
 
 # Build results
-obj/Debug/*
+DrogsorDie/obj/Debug/*
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
