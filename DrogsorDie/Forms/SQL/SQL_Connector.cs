@@ -3,28 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Common;
 using MySql.Data.MySqlClient;
 namespace DrogsorDie.Forms.SQL
 {
-    class SQL_Connector
+    static class SQL_Connector
     {
-        public static MySqlConnection getDefaultLocalConnection()
+        private static MySqlConnection mySqlConnection;
+        public static DbDataReader sendRequest(string statement)
         {
-            String connString = "Server=" + "localhost" + ";Database=" + "default_schema"
-                + ";port=" + "3306" + ";User Id=" + "user" + ";password=" + "user";
-
-            return new MySqlConnection(connString);
+            if (mySqlConnection != null)
+            {
+                MySqlCommand cmd = mySqlConnection.CreateCommand();
+                cmd.CommandText = statement;
+                DbDataReader dbDataReader = cmd.ExecuteReader();
+                if (dbDataReader.HasRows)
+                {
+                    return dbDataReader;
+                }
+                else
+                {
+                    throw new Exception("no Values found");
+                }
+            }
+            else
+            {
+                throw new Exception("sqlConnection not Initialized");
+            }
         }
-        public static MySqlConnection
-                 GetDBConnection(string host, int port, string database, string username, string password)
+        public static void initializeDefaultLocalConnection()
+        {
+            initializeDBConnection("localhost", 3306, "default_schema", "username", "user");
+        }
+        public static void initializeDBConnection(string host, int port, string database, string username, string password)
         {
             // Connection String.
             String connString = "Server=" + host + ";Database=" + database
                 + ";port=" + port + ";User Id=" + username + ";password=" + password;
 
-            MySqlConnection conn = new MySqlConnection(connString);
-
-            return conn;
+            mySqlConnection = new MySqlConnection(connString);
+            mySqlConnection.Open();
         }
     }
 }

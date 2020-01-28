@@ -8,7 +8,7 @@ namespace DrogsorDie.Forms.Logik
 {
     class PatientL
     {
-        private int ID;
+        private int id;
         private int plz;
         private string straße;
         private string hausnr;
@@ -20,6 +20,7 @@ namespace DrogsorDie.Forms.Logik
         private DateTime naechsterBesuch;
         private string letzterBekannterStatus;
 
+        public int Id { get => id; set => id = value; }
         public int Plz { get => plz; set => plz = value; }
         public string Straße { get => straße; set => straße = value; }
         public string Nachname { get => nachname; set => nachname = value; }
@@ -35,8 +36,6 @@ namespace DrogsorDie.Forms.Logik
       //  public List<Patientenbesuch> Patientenbesuche { get => null; }
         public double Gesamtkosten { get => 0; }
         public double Patientenbesuche_gesamt { get => 0; }
-
-
         public static PatientL getPatient(int patientenID)
         {
             return null;
