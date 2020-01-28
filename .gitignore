@@ -355,3 +355,4 @@ MigrationBackup/
 .ionide/
 DrogsorDie/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache
+*.cache
