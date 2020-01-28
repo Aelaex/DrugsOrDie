@@ -11,17 +11,11 @@ using DrogsorDie.Forms.Logik;
 
 namespace DrogsorDie.Forms.GUI
 {
-    public partial class Patient : Form
+    public partial class Patientenliste : Form
     {
-        public Patient()
+        public Patientenliste()
         {
             InitializeComponent();
-        }
-
-        private void buttonPatientenliste_Click(object sender, EventArgs e)
-        {
-            Patientenliste pliste = new Patientenliste();
-            pliste.Show();
         }
     }
 }
