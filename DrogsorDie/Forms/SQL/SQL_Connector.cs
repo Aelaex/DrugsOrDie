@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace DrogsorDie.Forms.Logik
+namespace DrogsorDie.Forms.SQL
 {
-    class Patient
+    class SQL_Connector
     {
+        public 
     }
 }

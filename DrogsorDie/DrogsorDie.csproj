@@ -73,8 +73,9 @@
     <Compile Include="Forms\GUI\Patientenliste.Designer.cs">
       <DependentUpon>Patientenliste.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Logik\Patient.cs" />
     <Compile Include="Forms\SQL\Patient.cs" />
+    <Compile Include="Forms\Logik\Patient.cs" />
+    <Compile Include="Forms\SQL\SQL_Connector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\GUI\Patient.resx">
