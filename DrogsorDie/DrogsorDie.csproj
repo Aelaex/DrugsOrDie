@@ -73,11 +73,6 @@
     <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default_schemaDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>default_schemaDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Forms\GUI\Patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,17 +105,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="default_schemaDataSet.xsc">
-      <DependentUpon>default_schemaDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="default_schemaDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>default_schemaDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="default_schemaDataSet.xss">
-      <DependentUpon>default_schemaDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
