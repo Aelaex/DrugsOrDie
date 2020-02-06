@@ -1,3 +1,4 @@
+CREATE SCHEMA `default_schema` ;
 create user DBUser@'%' identified by 'user';
 GRANT ALL PRIVILEGES ON default_schema.* TO 'DBUser'@'%';
 
