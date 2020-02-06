@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DrogsorDie.Forms.Logik
 {
-    class PatientL
+    class Patient
     {
         private int id;
-        private int plz;
+        private string plz;
         private string straße;
         private string hausnr;
         private string nachname;
@@ -21,7 +21,7 @@ namespace DrogsorDie.Forms.Logik
         private string letzterBekannterStatus;
 
         public int Id { get => id; set => id = value; }
-        public int Plz { get => plz; set => plz = value; }
+        public string Plz { get => plz; set => plz = value; }
         public string Straße { get => straße; set => straße = value; }
         public string Nachname { get => nachname; set => nachname = value; }
         public string Vorname { get => vorname; set => vorname = value; }
@@ -36,11 +36,30 @@ namespace DrogsorDie.Forms.Logik
       //  public List<Patientenbesuch> Patientenbesuche { get => null; }
         public double Gesamtkosten { get => 0; }
         public double Patientenbesuche_gesamt { get => 0; }
-        public static PatientL getPatient(int patientenID)
+        public static Patient getPatient(int patientenID)
         {
-            return null;
+            Patient patient = new Patient();
+
+            System.Data.Common.DbDataReader dbDataReaderPatient= SQL.SQL_Connector.sendRequest("SELECT * FROM patienten WHERE idPatient = " + patientenID);
+            dbDataReaderPatient.Read();
+            patient.Id = dbDataReaderPatient.GetInt32(dbDataReaderPatient.GetOrdinal("idPatient"));
+            patient.Plz = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("plz"));
+            patient.Straße = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("strasse"));
+            patient.Hausnr = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("hausnummer"));
+            patient.Nachname = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("name"));
+            patient.Vorname = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("vorname"));
+            patient.Geburtstag = DateTime.Parse(dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("geburtstag")));
+            patient.Geschlecht = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("geschlecht"));
+            patient.Telefon = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("telefon"));
+            patient.NaechsterBesuch = DateTime.Parse(dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("naechsterBesuch")));
+            patient.LetzterBekannterStatus = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("letzterBekannterStatus"));
+            return patient;
         }
-        public PatientL(string norname, string nachname)
+        public Patient(string vorname, string nachname)
+        {
+
+        }
+        private Patient()
         {
 
         }
