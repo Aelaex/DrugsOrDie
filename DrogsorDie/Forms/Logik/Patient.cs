@@ -34,7 +34,6 @@ namespace DrogsorDie.Forms.Logik
       //  public List<Vorerkrankung> Vorerkrankungen { get => null;}
       //  public List<Allergie> Allergien { get => null; }
       //  public List<Patientenbesuch> Patientenbesuche { get => null; }
-      //test
         public double Gesamtkosten { get => 0; }
         public double Patientenbesuche_gesamt { get => 0; }
         public static Patient getPatient(int patientenID)
@@ -54,6 +53,7 @@ namespace DrogsorDie.Forms.Logik
             patient.Telefon = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("telefon"));
             patient.NaechsterBesuch = DateTime.Parse(dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("naechsterBesuch")));
             patient.LetzterBekannterStatus = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("letzterBekannterStatus"));
+            dbDataReaderPatient.Close();
             return patient;
         }
         public Patient(string vorname, string nachname)
@@ -62,8 +62,12 @@ namespace DrogsorDie.Forms.Logik
         }
         private Patient()
         {
-
+            
         }
-        
+        public void save()
+        {
+            Geburtstag.ToString("YYYY-MM-DD");
+            SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = {Plz},`strasse` = {Straße},`hausnummer` = {Hausnr},`name` = {Nachname},`vorname` = {Vorname},`geburtstag` = {Geburtstag.ToString("YYYY-MM-DD")},`geschlecht` = {Geschlecht},`telefon` = {Telefon},`naechsterBesuch` = {NaechsterBesuch.ToString("YYYY-MM-DD hh:mm:ss")},`letzterBekannterStatus` = {LetzterBekannterStatus}");
+        }
     }
 }

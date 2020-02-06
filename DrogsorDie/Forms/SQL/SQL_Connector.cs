@@ -31,6 +31,19 @@ namespace DrogsorDie.Forms.SQL
                 throw new Exception("sqlConnection not Initialized");
             }
         }
+        public static void sendUpdate(string statement)
+        {
+            if (mySqlConnection != null)
+            {
+                MySqlCommand cmd = mySqlConnection.CreateCommand();
+                cmd.CommandText = statement;
+                cmd.ExecuteNonQuery();
+            }
+            else
+            {
+                throw new Exception("sqlConnection not Initialized");
+            }
+        }
         public static void initializeDefaultLocalConnection()
         {
             initializeDBConnection("localhost", 3306, "default_schema", "DBUser", "user");
