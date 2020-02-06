@@ -27,7 +27,8 @@ namespace DrogsorDie.Forms.GUI
             textBoxnächster_Besuch.Text = patient.NaechsterBesuch.ToString("dd/MM/yyyy");
             textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
             textBoxPatienbesuche_gesamt.Text = Convert.ToString(patient.Patientenbesuche_gesamt);
-            
+            textBoxHausnummer.Text = patient.Hausnr;
+
         }
 
         private void buttonPatientenliste_Click(object sender, EventArgs e)

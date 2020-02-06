@@ -13,15 +13,17 @@
             <e p="Patient.cs" t="Include" />
             <e p="Patient.Designer.cs" t="Include" />
             <e p="Patient.resx" t="Include" />
+            <e p="patientenBesuch.cs" t="Include" />
+            <e p="patientenBesuch.Designer.cs" t="Include" />
             <e p="Patientenliste.cs" t="Include" />
             <e p="Patientenliste.Designer.cs" t="Include" />
             <e p="Patientenliste.resx" t="Include" />
           </e>
           <e p="Logik" t="Include">
             <e p="Patient.cs" t="Include" />
+            <e p="Patientenliste.cs" t="Include" />
           </e>
           <e p="SQL" t="Include">
-            <e p="Patient.cs" t="Include" />
             <e p="SQL_Connector.cs" t="Include" />
           </e>
         </e>

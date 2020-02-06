@@ -16,6 +16,7 @@ namespace DrogsorDie.Forms.Logik
             {
                 patientenListe.Add(Patient.getPatient(dbReaderAllPatients.GetInt32(dbReaderAllPatients.GetOrdinal("idPatient"))));
             }
+            
             return patientenListe;
         }
     }

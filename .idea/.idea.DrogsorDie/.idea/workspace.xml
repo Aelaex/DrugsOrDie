@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f763ec-7d0a-4390-ae7a-4545a2006cbb" name="Default Changelist" comment="" />
+    <list default="true" id="31f763ec-7d0a-4390-ae7a-4545a2006cbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,27 +27,36 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/Patient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" />
       </list>
     </option>
   </component>
+  <component name="ProjectId" id="1XR6psUw3AsuddDQgx5cEcqIheD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager">
@@ -87,42 +102,45 @@
       <option name="presentableId" value="Default" />
       <updated>1580989251633</updated>
       <workItem from="1580989257171" duration="1867000" />
+      <workItem from="1580996752888" duration="1260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="144" key="GridCell.Tab.0.bottom" timestamp="1580990161782">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580996973112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580990161782" />
-    <state width="1877" height="144" key="GridCell.Tab.0.center" timestamp="1580990161782">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580996973112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580990161782" />
-    <state width="1877" height="144" key="GridCell.Tab.0.left" timestamp="1580990161782">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580996973112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580990161782" />
-    <state width="1877" height="144" key="GridCell.Tab.0.right" timestamp="1580990161782">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580996973112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580990161782" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580989990225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
