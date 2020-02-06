@@ -24,8 +24,10 @@ namespace DrogsorDie.Forms.GUI
             textBoxTelefon.Text = patient.Telefon;
             textBoxGerburstag.Text = patient.Geburtstag.ToString("dd/MM/yyyy");
             textBoxGeschlecht.Text = patient.Geschlecht;
+            textBoxnächster_Besuch.Text = patient.NaechsterBesuch.ToString("dd/MM/yyyy");
+            textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
+            textBoxPatienbesuche_gesamt.Text = Convert.ToString(patient.Patientenbesuche_gesamt);
             
-
         }
 
         private void buttonPatientenliste_Click(object sender, EventArgs e)
