@@ -34,6 +34,7 @@ namespace DrogsorDie.Forms.Logik
       //  public List<Vorerkrankung> Vorerkrankungen { get => null;}
       //  public List<Allergie> Allergien { get => null; }
       //  public List<Patientenbesuch> Patientenbesuche { get => null; }
+      //test
         public double Gesamtkosten { get => 0; }
         public double Patientenbesuche_gesamt { get => 0; }
         public static Patient getPatient(int patientenID)
