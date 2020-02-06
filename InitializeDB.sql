@@ -16,7 +16,7 @@ CREATE TABLE `default_schema`.`patienten` (
   `telefon` VARCHAR(45) NULL,
   `naechsterBesuch` DATETIME NULL,
   `letzterBekannterStatus` VARCHAR(45) NULL,
-  PRIMARY KEY (`idPatienten`));
+  PRIMARY KEY (`idPatient`));
 CREATE TABLE `default_schema`.`patientenbesuch` (
   `idPatientenbesuch` INT NOT NULL,
   `idPatient` INT NULL,
