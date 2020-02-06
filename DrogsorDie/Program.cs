@@ -14,7 +14,7 @@ namespace DrogsorDie
         [STAThread]
         static void Main()
         {
-            //DrogsorDie.Forms.SQL.SQL_Connector.initializeDefaultLocalConnection();
+            DrogsorDie.Forms.SQL.SQL_Connector.initializeDefaultLocalConnection();
             //DrogsorDie.Forms.SQL.SQL_Connector.sendRequest("SELECT * FROM patienten");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -16,7 +16,7 @@ namespace DrogsorDie.Forms.GUI
         public Patient()
         {
             InitializeComponent();
-            PatientL patient = new PatientL("", "");
+            Logik.Patient patient = Logik.Patient.getPatient(1);
             textBoxVorname.Text = patient.Vorname;
             textBoxNachname.Text = patient.Nachname;
             textBoxPLZ.Text = Convert.ToString( patient.Plz);

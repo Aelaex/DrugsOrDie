@@ -5,7 +5,7 @@ GRANT ALL PRIVILEGES ON default_schema.* TO 'DBUser'@'%';
 -- Tables:
 
 CREATE TABLE `default_schema`.`patienten` (
-  `idPatienten` INT NOT NULL,
+  `idPatient` INT NOT NULL,
   `plz` VARCHAR(5) NULL,
   `strasse` VARCHAR(255) NULL,
   `hausnummer` VARCHAR(10) NULL,
