@@ -66,8 +66,7 @@ namespace DrogsorDie.Forms.Logik
         }
         public void save()
         {
-            Geburtstag.ToString("YYYY-MM-DD");
-            SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = {Plz},`strasse` = {Straße},`hausnummer` = {Hausnr},`name` = {Nachname},`vorname` = {Vorname},`geburtstag` = {Geburtstag.ToString("YYYY-MM-DD")},`geschlecht` = {Geschlecht},`telefon` = {Telefon},`naechsterBesuch` = {NaechsterBesuch.ToString("YYYY-MM-DD hh:mm:ss")},`letzterBekannterStatus` = {LetzterBekannterStatus}");
+            SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = \"{Plz}\",`strasse` = \"{Straße}\",`hausnummer` = \"{Hausnr}\",`name` = \"{Nachname}\",`vorname` = \"{Vorname}\",`geburtstag` = \"{Geburtstag.ToString("yyyy-MM-dd")}\",`geschlecht` = \"{Geschlecht}\",`telefon` = \"{Telefon}\",`naechsterBesuch` = \"{NaechsterBesuch.ToString("yyyy-MM-dd hh:mm:ss")}\",`letzterBekannterStatus` = \"{LetzterBekannterStatus}\"");
         }
     }
 }
