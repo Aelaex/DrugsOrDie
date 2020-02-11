@@ -91,6 +91,7 @@
     <Compile Include="Forms\GUI\Patientenliste.Designer.cs">
       <DependentUpon>Patientenliste.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Logik\DBObjekt.cs" />
     <Compile Include="Forms\Logik\Patient.cs" />
     <Compile Include="Forms\Logik\PatientenListe.cs" />
     <Compile Include="Forms\SQL\SQL_Connector.cs" />

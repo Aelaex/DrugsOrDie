@@ -19,5 +19,9 @@ namespace DrogsorDie.Forms.Logik
             
             return patientenListe;
         }
+        public static void createPatient(string vorname, string nachname)
+        {
+            new Patient(vorname, nachname);
+        }
     }
 }
