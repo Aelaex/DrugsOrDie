@@ -16,9 +16,11 @@ namespace DrogsorDie.Forms.GUI
         public Patientenliste()
         {
             InitializeComponent();
-            for (int i = 0 ; i < 12 ; i++) {
-                dataGridView1.Rows[i].Cells[0].Value = "Text";
-                dataGridView1.Rows.Add(i +1 );
+            for (int i = 0 ; i < 1 ; i++)
+            {
+                Logik.Patient test = Logik.Patient.getPatient(i);
+                dataGridView1.Rows.Add(1);
+                dataGridView1.Rows[i].Cells[0].Value = test.Vorname;
             }
         }
 
