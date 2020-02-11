@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrogsorDie.Forms.Logik
 {
-    class Patient
+    class Patient : DBObjekt
     {
         private int id;
         private string plz;
@@ -19,7 +19,7 @@ namespace DrogsorDie.Forms.Logik
         private string telefon;
         private DateTime naechsterBesuch;
         private string letzterBekannterStatus;
-
+        
         public int Id { get => id; set => id = value; }
         public string Plz { get => plz; set => plz = value; }
         public string Straße { get => straße; set => straße = value; }
@@ -58,7 +58,7 @@ namespace DrogsorDie.Forms.Logik
         }
         public Patient(string vorname, string nachname)
         {
-
+            
         }
         private Patient()
         {
@@ -67,6 +67,10 @@ namespace DrogsorDie.Forms.Logik
         public void save()
         {
             SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = \"{Plz}\",`strasse` = \"{Straße}\",`hausnummer` = \"{Hausnr}\",`name` = \"{Nachname}\",`vorname` = \"{Vorname}\",`geburtstag` = \"{Geburtstag.ToString("yyyy-MM-dd")}\",`geschlecht` = \"{Geschlecht}\",`telefon` = \"{Telefon}\",`naechsterBesuch` = \"{NaechsterBesuch.ToString("yyyy-MM-dd hh:mm:ss")}\",`letzterBekannterStatus` = \"{LetzterBekannterStatus}\"");
+        }
+        private static int getNextID()
+        {
+            return getNextID("Patienten","idPatient");
         }
     }
 }
