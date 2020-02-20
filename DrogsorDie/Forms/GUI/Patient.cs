@@ -13,10 +13,10 @@ namespace DrogsorDie.Forms.GUI
 {
     public partial class Patient : Form
     {
-        public Patient()
+        public Patient(int id)
         {
             InitializeComponent();
-            Logik.Patient patient = Logik.Patient.getPatient(0);
+            Logik.Patient patient = Logik.Patient.getPatient(id);
             textBoxVorname.Text = patient.Vorname;
             textBoxNachname.Text = patient.Nachname;
             textBoxPLZ.Text = Convert.ToString( patient.Plz);
@@ -34,7 +34,9 @@ namespace DrogsorDie.Forms.GUI
         private void buttonPatientenliste_Click(object sender, EventArgs e)
         {
             Patientenliste pliste = new Patientenliste();
+            
             pliste.Show();
+           
             
 
         }
@@ -44,5 +46,13 @@ namespace DrogsorDie.Forms.GUI
             DateTime test = new DateTime(2010,12,12);
             textBoxWohnort.Text = test.ToString("dd/MM/yyyy");
         }
+
+        private void Patient_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Patientenliste pliste = new Patientenliste();
+            pliste.Show();
+            this.Hide();
+        }
+
     }
 }

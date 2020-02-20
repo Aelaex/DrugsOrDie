@@ -17,10 +17,14 @@ namespace DrogsorDie.Forms.GUI
         {
             List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
             InitializeComponent();
-            for (int i = 0 ; i < 2 ; i++)
+            int i = 0;
+            foreach (var testa in test)
             {
                 dataGridView1.Rows.Add(1);
-                dataGridView1.Rows[i].Cells[0].Value = test[i];
+                dataGridView1.Rows[i].Cells[0].Value = test[i].Id ;
+                dataGridView1.Rows[i].Cells[1].Value = test[i].Vorname ;
+                dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname ;
+                i++;
             }
         }
 
@@ -28,5 +32,17 @@ namespace DrogsorDie.Forms.GUI
         {
             throw new System.NotImplementedException();
         }
+
+            private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+            {
+                Patient patientform = new Patient( Convert.ToInt32(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()));
+                patientform.Show();
+                
+            }
+
+            private void Patientenliste_FormClosed(object sender, FormClosedEventArgs e)
+            {
+               Application.Exit();
+            }
     }
 }
