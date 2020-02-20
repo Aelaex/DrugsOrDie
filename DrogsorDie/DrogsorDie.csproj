@@ -100,6 +100,9 @@
     <EmbeddedResource Include="Forms\GUI\Patient.resx">
       <DependentUpon>Patient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GUI\patientenBesuch.resx">
+      <DependentUpon>patientenBesuch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GUI\Patientenliste.resx">
       <DependentUpon>Patientenliste.cs</DependentUpon>
     </EmbeddedResource>
