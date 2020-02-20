@@ -43,16 +43,8 @@ namespace DrogsorDie.Forms.GUI
 
         private void buttonAllergien_Click(object sender, EventArgs e)
         {
-            DateTime test = new DateTime(2010,12,12);
+            DateTime test = new DateTime(2010, 12, 12);
             textBoxWohnort.Text = test.ToString("dd/MM/yyyy");
         }
-
-        private void Patient_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Patientenliste pliste = new Patientenliste();
-            pliste.Show();
-            this.Hide();
-        }
-
     }
 }

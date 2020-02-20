@@ -91,6 +91,12 @@
     <Compile Include="Forms\GUI\Patientenliste.Designer.cs">
       <DependentUpon>Patientenliste.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GUI\Patienthinzufügen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GUI\Patienthinzufügen.Designer.cs">
+      <DependentUpon>Patienthinzufügen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Logik\DBObjekt.cs" />
     <Compile Include="Forms\Logik\Patient.cs" />
     <Compile Include="Forms\Logik\PatientenListe.cs" />
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GUI\Patientenliste.resx">
       <DependentUpon>Patientenliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GUI\Patienthinzufügen.resx">
+      <DependentUpon>Patienthinzufügen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
