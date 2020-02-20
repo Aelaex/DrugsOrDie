@@ -18,7 +18,7 @@ namespace DrogsorDie
             //DrogsorDie.Forms.SQL.SQL_Connector.sendRequest("SELECT * FROM patienten");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Patient());
+            Application.Run(new Patientenliste());
             DrogsorDie.Forms.Logik.Patient test = DrogsorDie.Forms.Logik.Patient.getPatient(0);
             test.save();
         }
