@@ -58,15 +58,20 @@ namespace DrogsorDie.Forms.Logik
         }
         public Patient(string vorname, string nachname)
         {
-            
+            // Create new Patient auf Datenbank
+            Vorname = vorname;
+            Nachname = nachname;
+            Id = getNextID();
+            SQL.SQL_Connector.sendUpdate($"INSERT INTO `patienten` (`idPatient`, `name`, `vorname`) " +
+                $"VALUES(\"{Id}\",\"{Vorname}\",\"{Nachname}\")");
         }
         private Patient()
         {
-            
+            //Dieser Konstruktor sollte nur intern verwendet werden, um neue Objekte aus einer Datenbankabfrage zu erstellen
         }
         public void save()
         {
-            SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = \"{Plz}\",`strasse` = \"{Straße}\",`hausnummer` = \"{Hausnr}\",`name` = \"{Nachname}\",`vorname` = \"{Vorname}\",`geburtstag` = \"{Geburtstag.ToString("yyyy-MM-dd")}\",`geschlecht` = \"{Geschlecht}\",`telefon` = \"{Telefon}\",`naechsterBesuch` = \"{NaechsterBesuch.ToString("yyyy-MM-dd hh:mm:ss")}\",`letzterBekannterStatus` = \"{LetzterBekannterStatus}\"");
+            SQL.SQL_Connector.sendUpdate($"UPDATE PATIENTEN SET `plz` = \"{Plz}\",`strasse` = \"{Straße}\",`hausnummer` = \"{Hausnr}\",`name` = \"{Nachname}\",`vorname` = \"{Vorname}\",`geburtstag` = \"{Geburtstag.ToString("yyyy-MM-dd")}\",`geschlecht` = \"{Geschlecht}\",`telefon` = \"{Telefon}\",`naechsterBesuch` = \"{NaechsterBesuch.ToString("yyyy-MM-dd hh:mm:ss")}\",`letzterBekannterStatus` = \"{LetzterBekannterStatus}\" WHERE `idPatient` = \"{Id}\"");
         }
         private static int getNextID()
         {
