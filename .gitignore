@@ -359,3 +359,8 @@ DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache
 .idea/.idea.DrogsorDie/.idea/.name
 .idea/.idea.DrogsorDie/.idea/projectSettingsUpdater.xml
 .idea/.idea.DrogsorDie/.idea/vcs.xml
+.idea*
+.idea/.idea.DrogsorDie/.idea/contentModel.xml
+.idea/.idea.DrogsorDie/.idea/workspace.xml
+.idea/.idea.DrogsorDie/.idea/contentModel.xml
+DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache
