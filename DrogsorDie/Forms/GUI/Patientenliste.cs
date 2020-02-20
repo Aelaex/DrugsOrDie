@@ -44,5 +44,11 @@ namespace DrogsorDie.Forms.GUI
             {
                Application.Exit();
             }
+
+            private void button1_Click(object sender, EventArgs e)
+            {
+                Patienthinzufügen patienthinzufügen = new Patienthinzufügen();
+                patienthinzufügen.Show();
+            }
     }
 }
