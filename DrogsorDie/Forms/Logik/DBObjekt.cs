@@ -13,9 +13,15 @@ namespace DrogsorDie.Forms.Logik
         {
             SQL.CustomDBDataReader customDBReader = SQL.SQL_Connector.sendRequest($"SELECT max({primaryKey}) FROM {sqlName}");
             customDBReader.Read();
-            int result = customDBReader.reader.GetInt32(0);
-            customDBReader.Close();
-            return result + 1;
+            try { int result = customDBReader.reader.GetInt32(0);
+                customDBReader.Close();
+                return result + 1;
+            }
+            catch (System.Data.SqlTypes.SqlNullValueException e)
+            {
+                customDBReader.Close();
+                return 0;
+            }
         }
     }
 }
