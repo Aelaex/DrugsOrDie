@@ -376,8 +376,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Patient";
             this.Text = "Patient";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Patient_FormClosing);
-            
             this.ResumeLayout(false);
             this.PerformLayout();
         }

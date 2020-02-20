@@ -32,6 +32,7 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,12 +80,22 @@
             this.Column3.ReadOnly = true;
             this.Column3.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(570, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = " create Mensch";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Patientenliste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(723, 655);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Patientenliste";
@@ -100,5 +111,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button button1;
     }
 }
