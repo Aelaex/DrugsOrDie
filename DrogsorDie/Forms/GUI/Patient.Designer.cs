@@ -238,7 +238,6 @@
             this.textBoxNachname.Location = new System.Drawing.Point(500, 44);
             this.textBoxNachname.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNachname.Name = "textBoxNachname";
-            this.textBoxNachname.ReadOnly = true;
             this.textBoxNachname.Size = new System.Drawing.Size(142, 23);
             this.textBoxNachname.TabIndex = 18;
             // 
@@ -247,7 +246,6 @@
             this.textBoxVorname.Location = new System.Drawing.Point(190, 46);
             this.textBoxVorname.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVorname.Name = "textBoxVorname";
-            this.textBoxVorname.ReadOnly = true;
             this.textBoxVorname.Size = new System.Drawing.Size(187, 23);
             this.textBoxVorname.TabIndex = 26;
             // 
@@ -256,7 +254,6 @@
             this.textBoxWohnort.Location = new System.Drawing.Point(190, 100);
             this.textBoxWohnort.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxWohnort.Name = "textBoxWohnort";
-            this.textBoxWohnort.ReadOnly = true;
             this.textBoxWohnort.Size = new System.Drawing.Size(187, 23);
             this.textBoxWohnort.TabIndex = 27;
             // 
@@ -265,7 +262,6 @@
             this.textBoxStraße.Location = new System.Drawing.Point(190, 159);
             this.textBoxStraße.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxStraße.Name = "textBoxStraße";
-            this.textBoxStraße.ReadOnly = true;
             this.textBoxStraße.Size = new System.Drawing.Size(187, 23);
             this.textBoxStraße.TabIndex = 28;
             // 
@@ -274,7 +270,6 @@
             this.textBoxTelefon.Location = new System.Drawing.Point(190, 215);
             this.textBoxTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.ReadOnly = true;
             this.textBoxTelefon.Size = new System.Drawing.Size(187, 23);
             this.textBoxTelefon.TabIndex = 29;
             // 
@@ -283,7 +278,6 @@
             this.textBoxGeschlecht.Location = new System.Drawing.Point(190, 273);
             this.textBoxGeschlecht.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxGeschlecht.Name = "textBoxGeschlecht";
-            this.textBoxGeschlecht.ReadOnly = true;
             this.textBoxGeschlecht.Size = new System.Drawing.Size(187, 23);
             this.textBoxGeschlecht.TabIndex = 30;
             // 
@@ -292,7 +286,6 @@
             this.textBoxLetzterbekanterstatus.Location = new System.Drawing.Point(190, 336);
             this.textBoxLetzterbekanterstatus.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxLetzterbekanterstatus.Name = "textBoxLetzterbekanterstatus";
-            this.textBoxLetzterbekanterstatus.ReadOnly = true;
             this.textBoxLetzterbekanterstatus.Size = new System.Drawing.Size(187, 23);
             this.textBoxLetzterbekanterstatus.TabIndex = 31;
             // 
@@ -301,7 +294,6 @@
             this.textBoxPatienbesuche_gesamt.Location = new System.Drawing.Point(190, 396);
             this.textBoxPatienbesuche_gesamt.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPatienbesuche_gesamt.Name = "textBoxPatienbesuche_gesamt";
-            this.textBoxPatienbesuche_gesamt.ReadOnly = true;
             this.textBoxPatienbesuche_gesamt.Size = new System.Drawing.Size(187, 23);
             this.textBoxPatienbesuche_gesamt.TabIndex = 32;
             // 
@@ -310,7 +302,6 @@
             this.textBoxKostengesamt.Location = new System.Drawing.Point(190, 455);
             this.textBoxKostengesamt.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKostengesamt.Name = "textBoxKostengesamt";
-            this.textBoxKostengesamt.ReadOnly = true;
             this.textBoxKostengesamt.Size = new System.Drawing.Size(187, 23);
             this.textBoxKostengesamt.TabIndex = 33;
             // 
@@ -319,7 +310,6 @@
             this.textBoxPLZ.Location = new System.Drawing.Point(500, 99);
             this.textBoxPLZ.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPLZ.Name = "textBoxPLZ";
-            this.textBoxPLZ.ReadOnly = true;
             this.textBoxPLZ.Size = new System.Drawing.Size(142, 23);
             this.textBoxPLZ.TabIndex = 34;
             // 
@@ -328,7 +318,6 @@
             this.textBoxHausnummer.Location = new System.Drawing.Point(500, 157);
             this.textBoxHausnummer.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxHausnummer.Name = "textBoxHausnummer";
-            this.textBoxHausnummer.ReadOnly = true;
             this.textBoxHausnummer.Size = new System.Drawing.Size(142, 23);
             this.textBoxHausnummer.TabIndex = 35;
             // 
@@ -337,7 +326,6 @@
             this.textBoxGerburstag.Location = new System.Drawing.Point(500, 217);
             this.textBoxGerburstag.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxGerburstag.Name = "textBoxGerburstag";
-            this.textBoxGerburstag.ReadOnly = true;
             this.textBoxGerburstag.Size = new System.Drawing.Size(142, 23);
             this.textBoxGerburstag.TabIndex = 36;
             // 
@@ -346,7 +334,6 @@
             this.textBoxnächster_Besuch.Location = new System.Drawing.Point(500, 273);
             this.textBoxnächster_Besuch.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxnächster_Besuch.Name = "textBoxnächster_Besuch";
-            this.textBoxnächster_Besuch.ReadOnly = true;
             this.textBoxnächster_Besuch.Size = new System.Drawing.Size(142, 23);
             this.textBoxnächster_Besuch.TabIndex = 37;
             // 
