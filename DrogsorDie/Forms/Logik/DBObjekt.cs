@@ -11,10 +11,10 @@ namespace DrogsorDie.Forms.Logik
 
         protected static int getNextID(string sqlName, string primaryKey)
         {
-            System.Data.Common.DbDataReader reader = SQL.SQL_Connector.sendRequest($"SELECT max({primaryKey}) FROM {sqlName}");
-            reader.Read();
-            int result = reader.GetInt32(0);
-            reader.Close();
+            SQL.CustomDBDataReader customDBReader = SQL.SQL_Connector.sendRequest($"SELECT max({primaryKey}) FROM {sqlName}");
+            customDBReader.Read();
+            int result = customDBReader.reader.GetInt32(0);
+            customDBReader.Close();
             return result + 1;
         }
     }

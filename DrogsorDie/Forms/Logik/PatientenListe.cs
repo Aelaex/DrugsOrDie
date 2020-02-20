@@ -11,12 +11,20 @@ namespace DrogsorDie.Forms.Logik
         public static List<Patient> getAllePatienten()
         {
             List<Patient> patientenListe = new List<Patient>();
-            System.Data.Common.DbDataReader dbReaderAllPatients = SQL.SQL_Connector.sendRequest("SELECT idPatient FROM PATIENTEN");
+            List<int> idListe = new List<int>();
+            SQL.CustomDBDataReader dbReaderAllPatients = SQL.SQL_Connector.sendRequest("SELECT idPatient FROM PATIENTEN");
+            
             while (dbReaderAllPatients.Read())
             {
-                patientenListe.Add(Patient.getPatient(dbReaderAllPatients.GetInt32(dbReaderAllPatients.GetOrdinal("idPatient"))));
+                idListe.Add(dbReaderAllPatients.getInt("idPatient"));
             }
             dbReaderAllPatients.Close();
+
+            foreach(int id in idListe)
+            {
+                patientenListe.Add(Patient.getPatient(id));
+            }
+
             return patientenListe;
         }
         public static Patient createPatient(string vorname, string nachname)
