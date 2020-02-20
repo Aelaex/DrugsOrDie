@@ -356,3 +356,6 @@ MigrationBackup/
 DrogsorDie/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache
 *.cache
+.idea/.idea.DrogsorDie/.idea/.name
+.idea/.idea.DrogsorDie/.idea/projectSettingsUpdater.xml
+.idea/.idea.DrogsorDie/.idea/vcs.xml
