@@ -40,20 +40,20 @@ namespace DrogsorDie.Forms.Logik
         {
             Patient patient = new Patient();
 
-            System.Data.Common.DbDataReader dbDataReaderPatient= SQL.SQL_Connector.sendRequest("SELECT * FROM patienten WHERE idPatient = " + patientenID);
-            dbDataReaderPatient.Read();
-            patient.Id = dbDataReaderPatient.GetInt32(dbDataReaderPatient.GetOrdinal("idPatient"));
-            patient.Plz = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("plz"));
-            patient.Straße = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("strasse"));
-            patient.Hausnr = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("hausnummer"));
-            patient.Nachname = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("name"));
-            patient.Vorname = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("vorname"));
-            patient.Geburtstag = DateTime.Parse(dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("geburtstag")));
-            patient.Geschlecht = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("geschlecht"));
-            patient.Telefon = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("telefon"));
-            patient.NaechsterBesuch = DateTime.Parse(dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("naechsterBesuch")));
-            patient.LetzterBekannterStatus = dbDataReaderPatient.GetString(dbDataReaderPatient.GetOrdinal("letzterBekannterStatus"));
-            dbDataReaderPatient.Close();
+            SQL.CustomDBDataReader reader= SQL.SQL_Connector.sendRequest("SELECT * FROM patienten WHERE idPatient = " + patientenID);
+            reader.Read();
+            patient.Id = reader.getInt("idPatient");
+            patient.Plz = reader.getString("plz");
+            patient.Straße = reader.getString("strasse");
+            patient.Hausnr = reader.getString("hausnummer");
+            patient.Nachname = reader.getString("name");
+            patient.Vorname = reader.getString("vorname");
+            patient.Geburtstag = reader.getDateTime("geburtstag");
+            patient.Geschlecht = reader.getString("geschlecht");
+            patient.Telefon = reader.getString("telefon");
+            patient.NaechsterBesuch = reader.getDateTime("naechsterBesuch");
+            patient.LetzterBekannterStatus = reader.getString("letzterBekannterStatus");
+            reader.Close();
             return patient;
         }
         public Patient(string vorname, string nachname)

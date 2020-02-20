@@ -10,7 +10,7 @@ namespace DrogsorDie.Forms.SQL
     static class SQL_Connector
     {
         private static MySqlConnection mySqlConnection;
-        public static DbDataReader sendRequest(string statement)
+        public static CustomDBDataReader sendRequest(string statement)
         {
             if (mySqlConnection != null)
             {
@@ -19,7 +19,7 @@ namespace DrogsorDie.Forms.SQL
                 DbDataReader dbDataReader = cmd.ExecuteReader();
                 if (dbDataReader.HasRows)
                 {
-                    return dbDataReader;
+                    return new CustomDBDataReader(dbDataReader);
                 }
                 else
                 {

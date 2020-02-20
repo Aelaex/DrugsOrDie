@@ -94,6 +94,7 @@
     <Compile Include="Forms\Logik\DBObjekt.cs" />
     <Compile Include="Forms\Logik\Patient.cs" />
     <Compile Include="Forms\Logik\PatientenListe.cs" />
+    <Compile Include="Forms\SQL\CustomDBDataReader.cs" />
     <Compile Include="Forms\SQL\SQL_Connector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
