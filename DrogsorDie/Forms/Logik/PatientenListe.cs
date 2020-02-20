@@ -16,12 +16,12 @@ namespace DrogsorDie.Forms.Logik
             {
                 patientenListe.Add(Patient.getPatient(dbReaderAllPatients.GetInt32(dbReaderAllPatients.GetOrdinal("idPatient"))));
             }
-            
+            dbReaderAllPatients.Close();
             return patientenListe;
         }
-        public static void createPatient(string vorname, string nachname)
+        public static Patient createPatient(string vorname, string nachname)
         {
-            new Patient(vorname, nachname);
+            return new Patient(vorname, nachname);
         }
     }
 }

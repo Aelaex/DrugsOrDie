@@ -15,7 +15,7 @@ namespace DrogsorDie.Forms.Logik
             reader.Read();
             int result = reader.GetInt32(0);
             reader.Close();
-            return result;
+            return result + 1;
         }
     }
 }
