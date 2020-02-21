@@ -79,11 +79,11 @@
     <Compile Include="Forms\GUI\Patient.Designer.cs">
       <DependentUpon>Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\GUI\patientenBesuch.cs">
+    <Compile Include="Forms\GUI\patientenBesuchliste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\GUI\patientenBesuch.Designer.cs">
-      <DependentUpon>patientenBesuch.cs</DependentUpon>
+    <Compile Include="Forms\GUI\patientenBesuchliste.Designer.cs">
+      <DependentUpon>patientenBesuchliste.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GUI\Patientenliste.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="Forms\GUI\Patient.resx">
       <DependentUpon>Patient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\GUI\patientenBesuch.resx">
-      <DependentUpon>patientenBesuch.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\GUI\patientenBesuchliste.resx">
+      <DependentUpon>patientenBesuchliste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GUI\Patientenliste.resx">
       <DependentUpon>Patientenliste.cs</DependentUpon>

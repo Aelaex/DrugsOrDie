@@ -13,10 +13,12 @@ namespace DrogsorDie.Forms.GUI
 {
     public partial class Patient : Form
     {
-        public Patient(int id)
+        private int id;
+        public Patient(int _id)
         {
             InitializeComponent();
-            Logik.Patient patient = Logik.Patient.getPatient(id);
+            id = _id;
+            Logik.Patient patient = Logik.Patient.getPatient(_id);
             textBoxVorname.Text = patient.Vorname;
             textBoxNachname.Text = patient.Nachname;
             textBoxPLZ.Text = Convert.ToString( patient.Plz);
@@ -34,17 +36,33 @@ namespace DrogsorDie.Forms.GUI
         private void buttonPatientenliste_Click(object sender, EventArgs e)
         {
             Patientenliste pliste = new Patientenliste();
-            
             pliste.Show();
-           
-            
-
         }
 
         private void buttonAllergien_Click(object sender, EventArgs e)
         {
             DateTime test = new DateTime(2010, 12, 12);
             textBoxWohnort.Text = test.ToString("dd/MM/yyyy");
+        }
+
+        private void buttonSpeichern_Click(object sender, EventArgs e)
+        {
+            Logik.Patient patient = Logik.Patient.getPatient(id);
+            patient.Vorname = textBoxVorname.Text;
+            patient.Nachname = textBoxNachname.Text;
+            patient.Plz = textBoxPLZ.Text;
+            patient.Straße = textBoxStraße.Text;
+            patient.Telefon = textBoxTelefon.Text;
+            patient.Geburtstag = Convert.ToDateTime(textBoxGerburstag.Text);
+            patient.Geschlecht = textBoxGeschlecht.Text;
+            patient.NaechsterBesuch = Convert.ToDateTime(textBoxnächster_Besuch.Text);
+            patient.LetzterBekannterStatus = textBoxLetzterbekanterstatus.Text;
+            patient.save();
+        }
+
+        private void buttonPatientenbesuche_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

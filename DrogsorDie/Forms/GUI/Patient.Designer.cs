@@ -58,6 +58,7 @@
             this.textBoxHausnummer = new System.Windows.Forms.TextBox();
             this.textBoxGerburstag = new System.Windows.Forms.TextBox();
             this.textBoxnächster_Besuch = new System.Windows.Forms.TextBox();
+            this.buttonSpeichern = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPatientenliste
@@ -148,7 +149,7 @@
             this.label8.Location = new System.Drawing.Point(34, 219);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 15);
+            this.label8.Size = new System.Drawing.Size(45, 15);
             this.label8.TabIndex = 8;
             this.label8.Text = "Telefon";
             // 
@@ -212,6 +213,7 @@
             this.buttonPatientenbesuche.TabIndex = 14;
             this.buttonPatientenbesuche.Text = "Patientenbesuche";
             this.buttonPatientenbesuche.UseVisualStyleBackColor = true;
+            this.buttonPatientenbesuche.Click += new System.EventHandler(this.buttonPatientenbesuche_Click);
             // 
             // label12
             // 
@@ -337,12 +339,23 @@
             this.textBoxnächster_Besuch.Size = new System.Drawing.Size(142, 23);
             this.textBoxnächster_Besuch.TabIndex = 37;
             // 
+            // buttonSpeichern
+            // 
+            this.buttonSpeichern.Location = new System.Drawing.Point(525, 362);
+            this.buttonSpeichern.Name = "buttonSpeichern";
+            this.buttonSpeichern.Size = new System.Drawing.Size(117, 29);
+            this.buttonSpeichern.TabIndex = 38;
+            this.buttonSpeichern.Text = "Speichern";
+            this.buttonSpeichern.UseVisualStyleBackColor = true;
+            this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(689, 568);
+            this.Controls.Add(this.buttonSpeichern);
             this.Controls.Add(this.textBoxnächster_Besuch);
             this.Controls.Add(this.textBoxGerburstag);
             this.Controls.Add(this.textBoxHausnummer);
@@ -412,5 +425,6 @@
         private System.Windows.Forms.TextBox textBoxGerburstag;
         private System.Windows.Forms.TextBox textBoxnächster_Besuch;
         private System.Windows.Forms.TextBox textBoxHausnummer;
+        private System.Windows.Forms.Button buttonSpeichern;
     }
 }
