@@ -5,7 +5,7 @@ namespace DrogsorDie.Forms.GUI
 {
     public partial class PatientenbesuchListe : Form
     {
-        public PatientenbesuchListe(Logik.Patient patient)
+        public  PatientenbesuchListe(Logik.Patient patient)
         {
             InitializeComponent();
             List<Logik.Patientenbesuch> bPatientenbesuches = Logik.PatientenbesuchListe.getPatientenbesuche(patient);

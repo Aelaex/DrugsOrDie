@@ -15,19 +15,23 @@ namespace DrogsorDie.Forms.GUI
     {
         public Patientenliste()
         {
-            List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
             InitializeComponent();
+            refreshDataGrid();
+        }
+        private void refreshDataGrid()
+        {
+            dataGridView1.Rows.Clear();
+            List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
             int i = 0;
             foreach (var testa in test)
             {
                 dataGridView1.Rows.Add(1);
-                dataGridView1.Rows[i].Cells[0].Value = test[i].Id ;
-                dataGridView1.Rows[i].Cells[1].Value = test[i].Vorname ;
-                dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname ;
+                dataGridView1.Rows[i].Cells[0].Value = test[i].Id;
+                dataGridView1.Rows[i].Cells[1].Value = test[i].Vorname;
+                dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname;
                 i++;
             }
         }
-
             private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             throw new System.NotImplementedException();
@@ -49,6 +53,12 @@ namespace DrogsorDie.Forms.GUI
             {
                 Patienthinzufügen patienthinzufügen = new Patienthinzufügen();
                 patienthinzufügen.Show();
-            }
+                refreshDataGrid();
+        }
+
+        private void aktualisieren_Click(object sender, EventArgs e)
+        {
+            refreshDataGrid();
+        }
     }
 }
