@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrogsorDie.Forms.Logik
 {
-    class Patient : DBObjekt
+    public class Patient : DBObjekt
     {
         private int id;
         private string plz;

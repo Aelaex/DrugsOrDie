@@ -14,11 +14,12 @@ namespace DrogsorDie.Forms.GUI
     public partial class Patient : Form
     {
         private int id;
+        private Logik.Patient patient;
         public Patient(int _id)
         {
             InitializeComponent();
             id = _id;
-            Logik.Patient patient = Logik.Patient.getPatient(_id);
+            patient = Logik.Patient.getPatient(_id);
             textBoxVorname.Text = patient.Vorname;
             textBoxNachname.Text = patient.Nachname;
             textBoxPLZ.Text = Convert.ToString( patient.Plz);
@@ -33,12 +34,6 @@ namespace DrogsorDie.Forms.GUI
 
         }
 
-        private void buttonPatientenliste_Click(object sender, EventArgs e)
-        {
-            Patientenliste pliste = new Patientenliste();
-            pliste.Show();
-        }
-
         private void buttonAllergien_Click(object sender, EventArgs e)
         {
             DateTime test = new DateTime(2010, 12, 12);
@@ -47,7 +42,6 @@ namespace DrogsorDie.Forms.GUI
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            Logik.Patient patient = Logik.Patient.getPatient(id);
             patient.Vorname = textBoxVorname.Text;
             patient.Nachname = textBoxNachname.Text;
             patient.Plz = textBoxPLZ.Text;
@@ -62,7 +56,7 @@ namespace DrogsorDie.Forms.GUI
 
         private void buttonPatientenbesuche_Click(object sender, EventArgs e)
         {
-            PatientenbesuchListe pliste = new PatientenbesuchListe();
+            PatientenbesuchListe pliste = new PatientenbesuchListe(patient);
             pliste.Show();
         }
     }

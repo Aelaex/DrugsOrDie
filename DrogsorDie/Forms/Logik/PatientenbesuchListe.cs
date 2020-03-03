@@ -8,11 +8,11 @@ namespace DrogsorDie.Forms.Logik
 {
     class PatientenbesuchListe
     {
-        public static List<Patientenbesuch> getAllePatienten()
+        public static List<Patientenbesuch> getPatientenbesuche(Patient patient)
         {
             List<Patientenbesuch> patientenListe = new List<Patientenbesuch>();
             List<int> idListe = new List<int>();
-            SQL.CustomDBDataReader dbReaderAllPatients = SQL.SQL_Connector.sendRequest("select idPatientenbesuch from patientenbesuch");
+            SQL.CustomDBDataReader dbReaderAllPatients = SQL.SQL_Connector.sendRequest("select idPatientenbesuch from patientenbesuch where idPatient = " + patient.Id);
 
             while (dbReaderAllPatients.Read())
             {

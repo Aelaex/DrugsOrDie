@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrogsorDie.Forms.Logik
 {
-    class DBObjekt
+    public class DBObjekt
     {
 
         protected static int getNextID(string sqlName, string primaryKey)

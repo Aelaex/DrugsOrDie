@@ -172,20 +172,20 @@
             // 
             // buttonVorerkrankungen
             // 
-            this.buttonVorerkrankungen.Location = new System.Drawing.Point(451, 434);
+            this.buttonVorerkrankungen.Location = new System.Drawing.Point(435, 433);
             this.buttonVorerkrankungen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVorerkrankungen.Name = "buttonVorerkrankungen";
-            this.buttonVorerkrankungen.Size = new System.Drawing.Size(100, 25);
+            this.buttonVorerkrankungen.Size = new System.Drawing.Size(116, 25);
             this.buttonVorerkrankungen.TabIndex = 12;
             this.buttonVorerkrankungen.Text = "Vorerkrankungen";
             this.buttonVorerkrankungen.UseVisualStyleBackColor = true;
             // 
             // buttonAllergien
             // 
-            this.buttonAllergien.Location = new System.Drawing.Point(451, 404);
+            this.buttonAllergien.Location = new System.Drawing.Point(435, 403);
             this.buttonAllergien.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAllergien.Name = "buttonAllergien";
-            this.buttonAllergien.Size = new System.Drawing.Size(100, 25);
+            this.buttonAllergien.Size = new System.Drawing.Size(116, 25);
             this.buttonAllergien.TabIndex = 13;
             this.buttonAllergien.Text = "Allergien ";
             this.buttonAllergien.UseVisualStyleBackColor = true;
@@ -193,10 +193,10 @@
             // 
             // buttonPatientenbesuche
             // 
-            this.buttonPatientenbesuche.Location = new System.Drawing.Point(451, 374);
+            this.buttonPatientenbesuche.Location = new System.Drawing.Point(435, 373);
             this.buttonPatientenbesuche.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPatientenbesuche.Name = "buttonPatientenbesuche";
-            this.buttonPatientenbesuche.Size = new System.Drawing.Size(100, 25);
+            this.buttonPatientenbesuche.Size = new System.Drawing.Size(116, 25);
             this.buttonPatientenbesuche.TabIndex = 14;
             this.buttonPatientenbesuche.Text = "Patientenbesuche";
             this.buttonPatientenbesuche.UseVisualStyleBackColor = true;
@@ -328,9 +328,9 @@
             // 
             // buttonSpeichern
             // 
-            this.buttonSpeichern.Location = new System.Drawing.Point(451, 345);
+            this.buttonSpeichern.Location = new System.Drawing.Point(435, 344);
             this.buttonSpeichern.Name = "buttonSpeichern";
-            this.buttonSpeichern.Size = new System.Drawing.Size(100, 25);
+            this.buttonSpeichern.Size = new System.Drawing.Size(116, 25);
             this.buttonSpeichern.TabIndex = 38;
             this.buttonSpeichern.Text = "Speichern";
             this.buttonSpeichern.UseVisualStyleBackColor = true;
