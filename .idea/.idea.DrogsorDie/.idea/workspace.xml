@@ -4,9 +4,13 @@
     <list default="true" id="31f763ec-7d0a-4390-ae7a-4545a2006cbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.resx" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +35,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/Patient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/Patientenbesuch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenbesuchListe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/Patient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +113,7 @@
       <updated>1580989251633</updated>
       <workItem from="1580989257171" duration="1867000" />
       <workItem from="1580996752888" duration="1260000" />
+      <workItem from="1583337665890" duration="4583000" />
     </task>
     <servers />
   </component>
@@ -125,21 +136,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580996973112">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="160" key="GridCell.Tab.0.bottom" timestamp="1583348986533">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1860" height="160" key="GridCell.Tab.0.bottom/-1280.61.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1583348986533" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580996973112">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="160" key="GridCell.Tab.0.center" timestamp="1583348986533">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1860" height="160" key="GridCell.Tab.0.center/-1280.61.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1583348986533" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580996973112">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="160" key="GridCell.Tab.0.left" timestamp="1583348986533">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1860" height="160" key="GridCell.Tab.0.left/-1280.61.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1583348986533" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580996973112">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="160" key="GridCell.Tab.0.right" timestamp="1583348986533">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1860" height="160" key="GridCell.Tab.0.right/-1280.61.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1583348986533" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580996973112" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580989990225">
       <screen x="0" y="0" width="1920" height="1040" />

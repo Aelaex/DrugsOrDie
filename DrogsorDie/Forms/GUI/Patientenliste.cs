@@ -18,19 +18,24 @@ namespace DrogsorDie.Forms.GUI
             InitializeComponent();
             refreshDataGrid();
         }
+
         private void refreshDataGrid()
         {
-            dataGridView1.Rows.Clear();
-            List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
-            int i = 0;
-            foreach (var testa in test)
+            try
             {
-                dataGridView1.Rows.Add(1);
-                dataGridView1.Rows[i].Cells[0].Value = test[i].Id;
-                dataGridView1.Rows[i].Cells[1].Value = test[i].Vorname;
-                dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname;
-                i++;
+                dataGridView1.Rows.Clear();
+                List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
+                int i = 0;
+                foreach (var testa in test)
+                {
+                    dataGridView1.Rows.Add(1);
+                    dataGridView1.Rows[i].Cells[0].Value = test[i].Id;
+                    dataGridView1.Rows[i].Cells[1].Value = test[i].Vorname;
+                    dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname;
+                    i++;
+                }
             }
+            catch(Exception e){}
         }
             private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

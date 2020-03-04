@@ -16,12 +16,20 @@ namespace DrogsorDie.Forms.GUI
             int i = 0;
             int id = 0;
             Logik.PatientenListe.createPatient(textBoxVorname.Text, textBoxNachname.Text);
-            List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
-            foreach (var testa in test)
+            try
             {
-                id = test[i].Id ;
-                i++;
+                List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
+                foreach (var testa in test)
+                {
+                    id = test[i].Id ;
+                    i++;
+                }
             }
+            catch (Exception exception)
+            {
+               
+            }
+            
             Patient patientform = new Patient( id);
             patientform.Show();
             this.Hide();
