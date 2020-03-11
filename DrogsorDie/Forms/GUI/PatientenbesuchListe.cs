@@ -35,5 +35,11 @@ namespace DrogsorDie.Forms.GUI
                 
             }
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Patientenbesuch patientform = new Patientenbesuch( Convert.ToInt32(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()));
+            patientform.Show();
+        }
     }
 }

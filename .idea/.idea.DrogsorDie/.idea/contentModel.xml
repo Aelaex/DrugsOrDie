@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\alexander.wezel\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\alexander.wezel\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DrogsorDie.799445291.00" t="ExcludeRecursive" />
-    <e p="H:\Documents\GitHub\DrugsOrDie" t="IncludeFlat">
+    <e p="C:\Users\alexa\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\alexa\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DrogsorDie.-462890541.00" t="ExcludeRecursive" />
+    <e p="C:\Users\alexa\OneDrive\Dokumente\GitHub\DrugsOrDie" t="IncludeFlat">
       <e p="DrogsorDie" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -14,16 +14,27 @@
             <e p="Patient.Designer.cs" t="Include" />
             <e p="Patient.resx" t="Include" />
             <e p="patientenBesuch.cs" t="Include" />
-            <e p="patientenBesuch.Designer.cs" t="Include" />
+            <e p="Patientenbesuch.Designer.cs" t="Include" />
+            <e p="Patientenbesuch.resx" t="Include" />
+            <e p="PatientenbesuchListe.cs" t="Include" />
+            <e p="PatientenbesuchListe.Designer.cs" t="Include" />
+            <e p="PatientenbesuchListe.resx" t="Include" />
             <e p="Patientenliste.cs" t="Include" />
             <e p="Patientenliste.Designer.cs" t="Include" />
             <e p="Patientenliste.resx" t="Include" />
+            <e p="Patienthinzufügen.cs" t="Include" />
+            <e p="Patienthinzufügen.Designer.cs" t="Include" />
+            <e p="Patienthinzufügen.resx" t="Include" />
           </e>
           <e p="Logik" t="Include">
+            <e p="DBObjekt.cs" t="Include" />
             <e p="Patient.cs" t="Include" />
+            <e p="patientenBesuch.cs" t="Include" />
+            <e p="PatientenbesuchListe.cs" t="Include" />
             <e p="Patientenliste.cs" t="Include" />
           </e>
           <e p="SQL" t="Include">
+            <e p="CustomDBDataReader.cs" t="Include" />
             <e p="SQL_Connector.cs" t="Include" />
           </e>
         </e>

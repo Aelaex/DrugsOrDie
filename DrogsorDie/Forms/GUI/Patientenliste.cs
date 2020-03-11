@@ -37,10 +37,7 @@ namespace DrogsorDie.Forms.GUI
             }
             catch(Exception e){}
         }
-            private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
+      
 
             private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
             {

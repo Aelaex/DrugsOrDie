@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f763ec-7d0a-4390-ae7a-4545a2006cbb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrogsorDie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrogsorDie/DrogsorDie.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/DrogsorDie.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.resx" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DrogsorDie/obj/Debug/DrogsorDie.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +36,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/DBObjekt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DrogsorDie/Forms/Logik/Patient.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,19 +54,25 @@
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.Designer.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/Logik/PatientenListe.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patient.cs" />
-        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patienthinzufügen.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.Designer.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenliste.cs" />
         <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/PatientenbesuchListe.cs" />
+        <option value="$PROJECT_DIR$/DrogsorDie/Forms/GUI/Patientenbesuch.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XR6psUw3AsuddDQgx5cEcqIheD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -114,6 +123,9 @@
       <workItem from="1580989257171" duration="1867000" />
       <workItem from="1580996752888" duration="1260000" />
       <workItem from="1583337665890" duration="4583000" />
+      <workItem from="1583665681465" duration="167000" />
+      <workItem from="1583666100005" duration="6405000" />
+      <workItem from="1583870950459" duration="335000" />
     </task>
     <servers />
   </component>
@@ -134,6 +146,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1860" height="160" key="GridCell.Tab.0.bottom" timestamp="1583348986533">
@@ -164,5 +179,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="387" key="ToolboxManager/0.0.1920.1040@0.0.1920.1040" timestamp="1580993769076" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1583665926644">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/-1280.61.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1583665926644" />
   </component>
 </project>
