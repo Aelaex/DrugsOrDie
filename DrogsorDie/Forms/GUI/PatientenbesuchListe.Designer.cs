@@ -31,6 +31,7 @@ namespace DrogsorDie.Forms.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientenbesuchListe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Datrum = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +82,7 @@ namespace DrogsorDie.Forms.GUI
             this.ClientSize = new System.Drawing.Size(447, 437);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PatientenbesuchListe";
             this.Text = "PatientenbesuchListe";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
