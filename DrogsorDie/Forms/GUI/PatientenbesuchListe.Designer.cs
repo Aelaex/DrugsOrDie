@@ -34,6 +34,7 @@ namespace DrogsorDie.Forms.GUI
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Datrum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,12 +63,23 @@ namespace DrogsorDie.Forms.GUI
             this.Datrum.HeaderText = "Datum";
             this.Datrum.Name = "Datrum";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(340, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 25);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Neuer Besuch";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PatientenbesuchListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(447, 437);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "PatientenbesuchListe";
             this.Text = "PatientenbesuchListe";
@@ -81,5 +93,6 @@ namespace DrogsorDie.Forms.GUI
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Datrum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -41,5 +41,12 @@ namespace DrogsorDie.Forms.GUI
             Patientenbesuch patientform = new Patientenbesuch( Convert.ToInt32(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()));
             patientform.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime zeit = DateTime.Now;
+            Logik.Patientenbesuch patientenbesuch = new Logik.Patientenbesuch(Patient.Id, zeit);
+            refreshDataGrid();
+        }
     }
 }
