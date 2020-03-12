@@ -18,6 +18,8 @@ namespace DrogsorDie.Forms.GUI
         public Patient(int _id)
         {
             InitializeComponent();
+            dateTimePickerGerburtstag.Format = DateTimePickerFormat.Custom;
+            dateTimePickerGerburtstag.CustomFormat = "dd/MM/yyyy";
             id = _id;
             patient = Logik.Patient.getPatient(_id);
             textBoxVorname.Text = patient.Vorname;
@@ -25,7 +27,7 @@ namespace DrogsorDie.Forms.GUI
             textBoxPLZ.Text = Convert.ToString( patient.Plz);
             textBoxStraße.Text = patient.Straße;
             textBoxTelefon.Text = patient.Telefon;
-            textBoxGerburstag.Text = patient.Geburtstag.ToString("dd/MM/yyyy");
+            dateTimePickerGerburtstag.Value = patient.Geburtstag;
             textBoxGeschlecht.Text = patient.Geschlecht;
             textBoxnächster_Besuch.Text = patient.NaechsterBesuch.ToString("dd/MM/yyyy");
             textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
@@ -36,8 +38,7 @@ namespace DrogsorDie.Forms.GUI
 
         private void buttonAllergien_Click(object sender, EventArgs e)
         {
-            DateTime test = new DateTime(2010, 12, 12);
-            textBoxWohnort.Text = test.ToString("dd/MM/yyyy");
+            
         }
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
@@ -47,7 +48,7 @@ namespace DrogsorDie.Forms.GUI
             patient.Plz = textBoxPLZ.Text;
             patient.Straße = textBoxStraße.Text;
             patient.Telefon = textBoxTelefon.Text;
-            patient.Geburtstag = Convert.ToDateTime(textBoxGerburstag.Text);
+            patient.Geburtstag = dateTimePickerGerburtstag.Value;
             patient.Geschlecht = textBoxGeschlecht.Text;
             patient.NaechsterBesuch = Convert.ToDateTime(textBoxnächster_Besuch.Text);
             patient.LetzterBekannterStatus = textBoxLetzterbekanterstatus.Text;

@@ -55,9 +55,9 @@
             this.textBoxKostengesamt = new System.Windows.Forms.TextBox();
             this.textBoxPLZ = new System.Windows.Forms.TextBox();
             this.textBoxHausnummer = new System.Windows.Forms.TextBox();
-            this.textBoxGerburstag = new System.Windows.Forms.TextBox();
             this.textBoxnächster_Besuch = new System.Windows.Forms.TextBox();
             this.buttonSpeichern = new System.Windows.Forms.Button();
+            this.dateTimePickerGerburtstag = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // labelPLZ
@@ -310,14 +310,6 @@
             this.textBoxHausnummer.Size = new System.Drawing.Size(122, 20);
             this.textBoxHausnummer.TabIndex = 35;
             // 
-            // textBoxGerburstag
-            // 
-            this.textBoxGerburstag.Location = new System.Drawing.Point(429, 188);
-            this.textBoxGerburstag.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxGerburstag.Name = "textBoxGerburstag";
-            this.textBoxGerburstag.Size = new System.Drawing.Size(122, 20);
-            this.textBoxGerburstag.TabIndex = 36;
-            // 
             // textBoxnächster_Besuch
             // 
             this.textBoxnächster_Besuch.Location = new System.Drawing.Point(429, 237);
@@ -336,15 +328,23 @@
             this.buttonSpeichern.UseVisualStyleBackColor = true;
             this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
             // 
+            // dateTimePickerGerburtstag
+            // 
+            this.dateTimePickerGerburtstag.CustomFormat = "YYYY";
+            this.dateTimePickerGerburtstag.Location = new System.Drawing.Point(429, 181);
+            this.dateTimePickerGerburtstag.Name = "dateTimePickerGerburtstag";
+            this.dateTimePickerGerburtstag.Size = new System.Drawing.Size(122, 20);
+            this.dateTimePickerGerburtstag.TabIndex = 39;
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(591, 492);
+            this.Controls.Add(this.dateTimePickerGerburtstag);
             this.Controls.Add(this.buttonSpeichern);
             this.Controls.Add(this.textBoxnächster_Besuch);
-            this.Controls.Add(this.textBoxGerburstag);
             this.Controls.Add(this.textBoxHausnummer);
             this.Controls.Add(this.textBoxPLZ);
             this.Controls.Add(this.textBoxKostengesamt);
@@ -407,9 +407,9 @@
         private System.Windows.Forms.TextBox textBoxPatienbesuche_gesamt;
         private System.Windows.Forms.TextBox textBoxKostengesamt;
         private System.Windows.Forms.TextBox textBoxPLZ;
-        private System.Windows.Forms.TextBox textBoxGerburstag;
         private System.Windows.Forms.TextBox textBoxnächster_Besuch;
         private System.Windows.Forms.TextBox textBoxHausnummer;
         private System.Windows.Forms.Button buttonSpeichern;
+        private System.Windows.Forms.DateTimePicker dateTimePickerGerburtstag;
     }
 }
