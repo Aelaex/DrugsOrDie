@@ -40,7 +40,7 @@ namespace DrogsorDie.Forms.GUI
             this.buttonSpeichern = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textboxStatus = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEinliferungszeitpunk = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // textBox1
@@ -100,12 +100,12 @@ namespace DrogsorDie.Forms.GUI
             this.textboxStatus.Size = new System.Drawing.Size(106, 23);
             this.textboxStatus.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dateTimePickerEinliferungszeitpunk
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(34, 118);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(68, 23);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePickerEinliferungszeitpunk.Location = new System.Drawing.Point(34, 118);
+            this.dateTimePickerEinliferungszeitpunk.Name = "dateTimePickerEinliferungszeitpunk";
+            this.dateTimePickerEinliferungszeitpunk.Size = new System.Drawing.Size(68, 23);
+            this.dateTimePickerEinliferungszeitpunk.TabIndex = 7;
             // 
             // Patientenbesuch
             // 
@@ -113,7 +113,7 @@ namespace DrogsorDie.Forms.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(377, 507);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerEinliferungszeitpunk);
             this.Controls.Add(this.textboxStatus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonSpeichern);
@@ -137,6 +137,6 @@ namespace DrogsorDie.Forms.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textboxStatus;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEinliferungszeitpunk;
     }
 }

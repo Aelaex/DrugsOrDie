@@ -24,10 +24,16 @@ namespace DrogsorDie.Forms.GUI
                 int i = 0;
                 foreach (var bpatientenbesuch in bPatientenbesuches)
                 {
-                    dataGridView1.Rows.Add(1);
-                    dataGridView1.Rows[i].Cells[0].Value = bPatientenbesuches[i].Id;
-                    dataGridView1.Rows[i].Cells[1].Value = bPatientenbesuches[i].EinlieferungsZeitpunkt.ToString();
-                    i++;
+                    
+                        dataGridView1.Rows.Add(1);
+                        dataGridView1.Rows[i].Cells[0].Value = bPatientenbesuches[i].Id;
+                        dataGridView1.Rows[i].Cells[1].Value = bPatientenbesuches[i].EinlieferungsZeitpunkt.ToString();
+                        if (dataGridView1.Rows[i].Cells[0].Value == "")
+                        {
+                            dataGridView1.Rows[i].Dispose();
+                        } 
+                        i++;
+                    
                 }
             }
             catch (Exception e)
