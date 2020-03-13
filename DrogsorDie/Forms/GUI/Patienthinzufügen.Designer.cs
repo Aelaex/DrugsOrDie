@@ -31,6 +31,8 @@ namespace DrogsorDie.Forms.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(Patienthinzufügen));
             this.textBoxVorname = new System.Windows.Forms.TextBox();
             this.textBoxNachname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -89,6 +91,7 @@ namespace DrogsorDie.Forms.GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNachname);
             this.Controls.Add(this.textBoxVorname);
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Patienthinzufügen";
             this.Text = "Patienthinzufügen";
             this.ResumeLayout(false);
