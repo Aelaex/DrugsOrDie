@@ -17,29 +17,18 @@ namespace DrogsorDie.Forms.GUI
 
         private void refreshDataGrid()
         {
-            try
-            {
+            
                 List<Logik.Patientenbesuch> bPatientenbesuches =
                     Logik.PatientenbesuchListe.getPatientenbesuche(Patient);
                 int i = 0;
                 foreach (var bpatientenbesuch in bPatientenbesuches)
                 {
-                    
                         dataGridView1.Rows.Add(1);
                         dataGridView1.Rows[i].Cells[0].Value = bPatientenbesuches[i].Id;
                         dataGridView1.Rows[i].Cells[1].Value = bPatientenbesuches[i].EinlieferungsZeitpunkt.ToString();
-                        if (dataGridView1.Rows[i].Cells[0].Value == "")
-                        {
-                            dataGridView1.Rows[i].Dispose();
-                        } 
                         i++;
-                    
                 }
-            }
-            catch (Exception e)
-            {
-                
-            }
+            
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -52,7 +41,9 @@ namespace DrogsorDie.Forms.GUI
         {
             DateTime zeit = DateTime.Now;
             Logik.Patientenbesuch patientenbesuch = new Logik.Patientenbesuch(Patient.Id, zeit);
-            refreshDataGrid();
+            PatientenbesuchListe pliste = new PatientenbesuchListe(Patient);
+            pliste.Show();
+            this.Close();
         }
     }
 }

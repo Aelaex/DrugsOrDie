@@ -51,6 +51,7 @@ namespace DrogsorDie.Forms.Logik
             EinlieferungsZeitpunkt = einlieferungszeitpunkt;
             SQL.SQL_Connector.sendUpdate($"INSERT INTO `patientenbesuch` (`idPatientenbesuch`, `idPatient`, `einlieferungsZeitpunkt`) " +
                 $"VALUES(\"{Id}\",\"{PatientenId}\",\"{EinlieferungsZeitpunkt.ToString("yyyy-MM-dd hh:mm:ss")}\")");
+            
         }
         private static int getNextID()
         {

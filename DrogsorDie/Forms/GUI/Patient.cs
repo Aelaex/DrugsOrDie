@@ -34,22 +34,18 @@ namespace DrogsorDie.Forms.GUI
             textBoxPatienbesuche_gesamt.Text = Convert.ToString(patient.Patientenbesuche_gesamt);
             textBoxHausnummer.Text = patient.Hausnr;
             int i = 0;
-            try
-            {
+           
                 List<Logik.Patientenbesuch> bPatientenbesuches =
                     Logik.PatientenbesuchListe.getPatientenbesuche(patient);
                 i = bPatientenbesuches.Count;
                 i = 0;
                 foreach (var bpatientenbesuch in bPatientenbesuches)
                 {
-                    textBoxLetzterbekanterstatus.Text = bPatientenbesuches[i].Id.ToString();
+                    textBoxLetzterbekanterstatus.Text = bPatientenbesuches[i].EinlieferungsStatus.ToString();
                     i++;
                 }
                 
-            }
-            catch (Exception e)
-            {
-            }
+           
 
             textBoxPatienbesuche_gesamt.Text = i.ToString();
 

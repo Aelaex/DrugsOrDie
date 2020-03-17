@@ -21,8 +21,7 @@ namespace DrogsorDie.Forms.GUI
 
         private void refreshDataGrid()
         {
-            try
-            {
+            
                 dataGridView1.Rows.Clear();
                 List<Logik.Patient> test = Logik.PatientenListe.getAllePatienten();
                 int i = 0;
@@ -34,8 +33,7 @@ namespace DrogsorDie.Forms.GUI
                     dataGridView1.Rows[i].Cells[2].Value = test[i].Nachname;
                     i++;
                 }
-            }
-            catch(Exception e){}
+            
         }
       
 

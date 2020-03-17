@@ -23,7 +23,7 @@ namespace DrogsorDie.Forms.SQL
                 }
                 else
                 {
-                    throw new Exception("no Values found");
+                    return new CustomDBDataReader(dbDataReader);
                 }
             }
             else
