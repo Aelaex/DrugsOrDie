@@ -32,6 +32,7 @@
             <e p="patientenBesuch.cs" t="Include" />
             <e p="PatientenbesuchListe.cs" t="Include" />
             <e p="Patientenliste.cs" t="Include" />
+            <e p="PLZfinder.cs" t="Include" />
           </e>
           <e p="SQL" t="Include">
             <e p="CustomDBDataReader.cs" t="Include" />

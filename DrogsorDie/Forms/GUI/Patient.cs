@@ -18,6 +18,7 @@ namespace DrogsorDie.Forms.GUI
         public Patient(int _id)
         {
             InitializeComponent();
+            PLZfinder plZfinder = new PLZfinder();
             dateTimePickerGerburtstag.Format = DateTimePickerFormat.Custom;
             dateTimePickerGerburtstag.CustomFormat = "dd/MM/yyyy";
             id = _id;
@@ -25,6 +26,7 @@ namespace DrogsorDie.Forms.GUI
             textBoxVorname.Text = patient.Vorname;
             textBoxNachname.Text = patient.Nachname;
             textBoxPLZ.Text = Convert.ToString( patient.Plz);
+            textBoxWohnort.Text = plZfinder.Ortsgeber(patient.Plz);
             textBoxStraße.Text = patient.Straße;
             textBoxTelefon.Text = patient.Telefon;
             dateTimePickerGerburtstag.Value = patient.Geburtstag;
