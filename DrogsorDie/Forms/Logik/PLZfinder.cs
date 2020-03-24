@@ -45,16 +45,20 @@ namespace DrogsorDie.Forms.Logik
         }
         public string Ortsgeber(string plz)
         {
-            PLZ_einlesen();
-            foreach (Postleitzahl Postleitzahl in plz_liste)
+            try
+            {
+                PLZ_einlesen();
+                foreach (Postleitzahl Postleitzahl in plz_liste)
                 {
                     if (Postleitzahl.PLZ == int.Parse(plz))
                     {
-                      return Postleitzahl.OrtMitZusatz;                      
+                        return Postleitzahl.OrtMitZusatz;
                     }
                 }
 
-            return " fehler ";
+                return " fehler ";
+            }
+            catch (Exception e){ return null; }
         }
     }
 }

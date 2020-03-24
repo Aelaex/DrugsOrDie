@@ -20,7 +20,7 @@ namespace DrogsorDie.Forms.GUI
             InitializeComponent();
             PLZfinder plZfinder = new PLZfinder();
             dateTimePickerGerburtstag.Format = DateTimePickerFormat.Custom;
-            dateTimePickerGerburtstag.CustomFormat = "dd/MM/yyyy";
+           dateTimePickerGerburtstag.CustomFormat = "dd/MM/yyyy";
             id = _id;
             patient = Logik.Patient.getPatient(_id);
             textBoxVorname.Text = patient.Vorname;
@@ -32,7 +32,7 @@ namespace DrogsorDie.Forms.GUI
             dateTimePickerGerburtstag.Value = patient.Geburtstag;
             textBoxGeschlecht.Text = patient.Geschlecht;
             textBoxnächster_Besuch.Text = patient.NaechsterBesuch.ToString("dd/MM/yyyy");
-       //     textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
+            textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
             textBoxPatienbesuche_gesamt.Text = Convert.ToString(patient.Patientenbesuche_gesamt);
             textBoxHausnummer.Text = patient.Hausnr;
             int i = 0;
