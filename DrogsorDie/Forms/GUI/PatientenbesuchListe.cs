@@ -17,15 +17,14 @@ namespace DrogsorDie.Forms.GUI
 
         private void refreshDataGrid()
         {
-            
-                List<Logik.Patientenbesuch> bPatientenbesuches =
+            List<Logik.Patientenbesuch> bPatientenbesuches =
                     Logik.PatientenbesuchListe.getPatientenbesuche(Patient);
                 int i = 0;
                 foreach (var bpatientenbesuch in bPatientenbesuches)
                 {
                         dataGridView1.Rows.Add(1);
                         dataGridView1.Rows[i].Cells[0].Value = bPatientenbesuches[i].Id;
-                        dataGridView1.Rows[i].Cells[1].Value = bPatientenbesuches[i].EinlieferungsZeitpunkt.ToString();
+                        dataGridView1.Rows[i].Cells[1].Value = bPatientenbesuches[i].EinlieferungsZeitpunkt.ToString("dd/MM/yyyy | HH:mm");
                         i++;
                 }
             

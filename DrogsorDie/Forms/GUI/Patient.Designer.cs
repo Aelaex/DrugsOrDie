@@ -57,9 +57,9 @@
             this.textBoxKostengesamt = new System.Windows.Forms.TextBox();
             this.textBoxPLZ = new System.Windows.Forms.TextBox();
             this.textBoxHausnummer = new System.Windows.Forms.TextBox();
-            this.textBoxnächster_Besuch = new System.Windows.Forms.TextBox();
             this.buttonSpeichern = new System.Windows.Forms.Button();
             this.dateTimePickerGerburtstag = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickernächster_Besuch = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // labelPLZ
@@ -174,6 +174,7 @@
             // 
             // buttonVorerkrankungen
             // 
+            this.buttonVorerkrankungen.Enabled = false;
             this.buttonVorerkrankungen.Location = new System.Drawing.Point(507, 500);
             this.buttonVorerkrankungen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVorerkrankungen.Name = "buttonVorerkrankungen";
@@ -184,7 +185,8 @@
             // 
             // buttonAllergien
             // 
-            this.buttonAllergien.Location = new System.Drawing.Point(507, 465);
+            this.buttonAllergien.Enabled = false;
+            this.buttonAllergien.Location = new System.Drawing.Point(507, 467);
             this.buttonAllergien.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAllergien.Name = "buttonAllergien";
             this.buttonAllergien.Size = new System.Drawing.Size(135, 29);
@@ -230,7 +232,7 @@
             this.textBoxNachname.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNachname.Name = "textBoxNachname";
             this.textBoxNachname.Size = new System.Drawing.Size(142, 23);
-            this.textBoxNachname.TabIndex = 18;
+            this.textBoxNachname.TabIndex = 2;
             // 
             // textBoxVorname
             // 
@@ -238,7 +240,7 @@
             this.textBoxVorname.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVorname.Name = "textBoxVorname";
             this.textBoxVorname.Size = new System.Drawing.Size(187, 23);
-            this.textBoxVorname.TabIndex = 26;
+            this.textBoxVorname.TabIndex = 1;
             // 
             // textBoxWohnort
             // 
@@ -254,7 +256,7 @@
             this.textBoxStraße.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxStraße.Name = "textBoxStraße";
             this.textBoxStraße.Size = new System.Drawing.Size(187, 23);
-            this.textBoxStraße.TabIndex = 28;
+            this.textBoxStraße.TabIndex = 4;
             // 
             // textBoxTelefon
             // 
@@ -262,7 +264,7 @@
             this.textBoxTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(187, 23);
-            this.textBoxTelefon.TabIndex = 29;
+            this.textBoxTelefon.TabIndex = 6;
             // 
             // textBoxGeschlecht
             // 
@@ -270,7 +272,7 @@
             this.textBoxGeschlecht.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxGeschlecht.Name = "textBoxGeschlecht";
             this.textBoxGeschlecht.Size = new System.Drawing.Size(187, 23);
-            this.textBoxGeschlecht.TabIndex = 30;
+            this.textBoxGeschlecht.TabIndex = 8;
             // 
             // textBoxLetzterbekanterstatus
             // 
@@ -278,7 +280,7 @@
             this.textBoxLetzterbekanterstatus.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxLetzterbekanterstatus.Name = "textBoxLetzterbekanterstatus";
             this.textBoxLetzterbekanterstatus.Size = new System.Drawing.Size(187, 23);
-            this.textBoxLetzterbekanterstatus.TabIndex = 31;
+            this.textBoxLetzterbekanterstatus.TabIndex = 10;
             // 
             // textBoxPatienbesuche_gesamt
             // 
@@ -286,7 +288,7 @@
             this.textBoxPatienbesuche_gesamt.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPatienbesuche_gesamt.Name = "textBoxPatienbesuche_gesamt";
             this.textBoxPatienbesuche_gesamt.Size = new System.Drawing.Size(187, 23);
-            this.textBoxPatienbesuche_gesamt.TabIndex = 32;
+            this.textBoxPatienbesuche_gesamt.TabIndex = 11;
             // 
             // textBoxKostengesamt
             // 
@@ -294,7 +296,7 @@
             this.textBoxKostengesamt.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKostengesamt.Name = "textBoxKostengesamt";
             this.textBoxKostengesamt.Size = new System.Drawing.Size(187, 23);
-            this.textBoxKostengesamt.TabIndex = 33;
+            this.textBoxKostengesamt.TabIndex = 12;
             // 
             // textBoxPLZ
             // 
@@ -302,7 +304,8 @@
             this.textBoxPLZ.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPLZ.Name = "textBoxPLZ";
             this.textBoxPLZ.Size = new System.Drawing.Size(142, 23);
-            this.textBoxPLZ.TabIndex = 34;
+            this.textBoxPLZ.TabIndex = 3;
+            this.textBoxPLZ.TextChanged += new System.EventHandler(this.textBoxPLZ_TextChanged);
             // 
             // textBoxHausnummer
             // 
@@ -310,22 +313,14 @@
             this.textBoxHausnummer.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxHausnummer.Name = "textBoxHausnummer";
             this.textBoxHausnummer.Size = new System.Drawing.Size(142, 23);
-            this.textBoxHausnummer.TabIndex = 35;
-            // 
-            // textBoxnächster_Besuch
-            // 
-            this.textBoxnächster_Besuch.Location = new System.Drawing.Point(500, 273);
-            this.textBoxnächster_Besuch.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxnächster_Besuch.Name = "textBoxnächster_Besuch";
-            this.textBoxnächster_Besuch.Size = new System.Drawing.Size(142, 23);
-            this.textBoxnächster_Besuch.TabIndex = 37;
+            this.textBoxHausnummer.TabIndex = 5;
             // 
             // buttonSpeichern
             // 
             this.buttonSpeichern.Location = new System.Drawing.Point(507, 397);
             this.buttonSpeichern.Name = "buttonSpeichern";
             this.buttonSpeichern.Size = new System.Drawing.Size(135, 29);
-            this.buttonSpeichern.TabIndex = 38;
+            this.buttonSpeichern.TabIndex = 13;
             this.buttonSpeichern.Text = "Speichern";
             this.buttonSpeichern.UseVisualStyleBackColor = true;
             this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
@@ -336,7 +331,14 @@
             this.dateTimePickerGerburtstag.Location = new System.Drawing.Point(500, 209);
             this.dateTimePickerGerburtstag.Name = "dateTimePickerGerburtstag";
             this.dateTimePickerGerburtstag.Size = new System.Drawing.Size(142, 23);
-            this.dateTimePickerGerburtstag.TabIndex = 39;
+            this.dateTimePickerGerburtstag.TabIndex = 7;
+            // 
+            // dateTimePickernächster_Besuch
+            // 
+            this.dateTimePickernächster_Besuch.Location = new System.Drawing.Point(500, 274);
+            this.dateTimePickernächster_Besuch.Name = "dateTimePickernächster_Besuch";
+            this.dateTimePickernächster_Besuch.Size = new System.Drawing.Size(140, 23);
+            this.dateTimePickernächster_Besuch.TabIndex = 28;
             // 
             // Patient
             // 
@@ -344,9 +346,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(689, 568);
+            this.Controls.Add(this.dateTimePickernächster_Besuch);
             this.Controls.Add(this.dateTimePickerGerburtstag);
             this.Controls.Add(this.buttonSpeichern);
-            this.Controls.Add(this.textBoxnächster_Besuch);
             this.Controls.Add(this.textBoxHausnummer);
             this.Controls.Add(this.textBoxPLZ);
             this.Controls.Add(this.textBoxKostengesamt);
@@ -409,9 +411,9 @@
         private System.Windows.Forms.TextBox textBoxPatienbesuche_gesamt;
         private System.Windows.Forms.TextBox textBoxKostengesamt;
         private System.Windows.Forms.TextBox textBoxPLZ;
-        private System.Windows.Forms.TextBox textBoxnächster_Besuch;
         private System.Windows.Forms.TextBox textBoxHausnummer;
         private System.Windows.Forms.Button buttonSpeichern;
         private System.Windows.Forms.DateTimePicker dateTimePickerGerburtstag;
+        private System.Windows.Forms.DateTimePicker dateTimePickernächster_Besuch;
     }
 }

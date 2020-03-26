@@ -55,8 +55,7 @@ namespace DrogsorDie.Forms.Logik
                         return Postleitzahl.OrtMitZusatz;
                     }
                 }
-
-                return " fehler ";
+                return "fehler";
             }
             catch (Exception e){ return null; }
         }

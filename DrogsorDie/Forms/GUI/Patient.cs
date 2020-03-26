@@ -20,7 +20,9 @@ namespace DrogsorDie.Forms.GUI
             InitializeComponent();
             PLZfinder plZfinder = new PLZfinder();
             dateTimePickerGerburtstag.Format = DateTimePickerFormat.Custom;
+            dateTimePickernächster_Besuch.Format = DateTimePickerFormat.Custom;
            dateTimePickerGerburtstag.CustomFormat = "dd/MM/yyyy";
+           dateTimePickernächster_Besuch.CustomFormat = "dd/MM/yyyy";
             id = _id;
             patient = Logik.Patient.getPatient(_id);
             textBoxVorname.Text = patient.Vorname;
@@ -31,7 +33,7 @@ namespace DrogsorDie.Forms.GUI
             textBoxTelefon.Text = patient.Telefon;
             dateTimePickerGerburtstag.Value = patient.Geburtstag;
             textBoxGeschlecht.Text = patient.Geschlecht;
-            textBoxnächster_Besuch.Text = patient.NaechsterBesuch.ToString("dd/MM/yyyy");
+            dateTimePickernächster_Besuch.Value = patient.NaechsterBesuch;
             textBoxLetzterbekanterstatus.Text = patient.LetzterBekannterStatus;
             textBoxPatienbesuche_gesamt.Text = Convert.ToString(patient.Patientenbesuche_gesamt);
             textBoxHausnummer.Text = patient.Hausnr;
@@ -67,7 +69,7 @@ namespace DrogsorDie.Forms.GUI
             patient.Telefon = textBoxTelefon.Text;
             patient.Geburtstag = dateTimePickerGerburtstag.Value;
             patient.Geschlecht = textBoxGeschlecht.Text;
-            patient.NaechsterBesuch = Convert.ToDateTime(textBoxnächster_Besuch.Text);
+            patient.NaechsterBesuch = dateTimePickernächster_Besuch.Value;
             patient.LetzterBekannterStatus = textBoxLetzterbekanterstatus.Text;
             patient.save();
         }
@@ -76,6 +78,18 @@ namespace DrogsorDie.Forms.GUI
         {
             PatientenbesuchListe pliste = new PatientenbesuchListe(patient);
             pliste.Show();
+        }
+
+        private void textBoxPLZ_TextChanged(object sender, EventArgs e)
+        {
+            PLZfinder plZfinder = new PLZfinder();
+            if ("fehler" == plZfinder.Ortsgeber(textBoxPLZ.Text))
+            {}
+            else
+            {
+                textBoxWohnort.Text = plZfinder.Ortsgeber(textBoxPLZ.Text);
+            }
+            
         }
     }
 }

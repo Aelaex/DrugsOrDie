@@ -47,6 +47,7 @@ namespace DrogsorDie.Forms.GUI
             // 
             this.textBox1.Location = new System.Drawing.Point(34, 47);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(68, 23);
             this.textBox1.TabIndex = 0;
             // 
@@ -69,7 +70,7 @@ namespace DrogsorDie.Forms.GUI
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(30, 184);
+            this.label2.Location = new System.Drawing.Point(30, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 3;
@@ -97,14 +98,14 @@ namespace DrogsorDie.Forms.GUI
             // 
             this.textboxStatus.Location = new System.Drawing.Point(174, 47);
             this.textboxStatus.Name = "textboxStatus";
-            this.textboxStatus.Size = new System.Drawing.Size(106, 23);
+            this.textboxStatus.Size = new System.Drawing.Size(105, 23);
             this.textboxStatus.TabIndex = 6;
             // 
             // dateTimePickerEinliferungszeitpunk
             // 
             this.dateTimePickerEinliferungszeitpunk.Location = new System.Drawing.Point(34, 118);
             this.dateTimePickerEinliferungszeitpunk.Name = "dateTimePickerEinliferungszeitpunk";
-            this.dateTimePickerEinliferungszeitpunk.Size = new System.Drawing.Size(68, 23);
+            this.dateTimePickerEinliferungszeitpunk.Size = new System.Drawing.Size(83, 23);
             this.dateTimePickerEinliferungszeitpunk.TabIndex = 7;
             // 
             // Patientenbesuch
